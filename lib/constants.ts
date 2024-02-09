@@ -23,7 +23,7 @@ export const NAV_LINKS: TNavLinks[] = [
   },
   {
     id: "contact",
-    label: "contact",
+    label: "Contact",
     href: "/"
   }
 ]

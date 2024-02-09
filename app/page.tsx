@@ -1,7 +1,10 @@
+import NavBar from "@/components/widgets/navbar";
 export default function Home() {
   return (
     <>
-      <h1>Bonjour</h1>
+      <header className="bg-slate-100">
+        <NavBar />
+      </header>
     </>
   );
 }
