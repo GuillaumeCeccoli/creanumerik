@@ -85,10 +85,13 @@
     }
   }
   .animateX {
-    animation: fade-inX 1s ease-out forwards;
+    animation: fade-inX 0.6s ease-out forwards;
   }
   .animateY {
-    animation: fade-inY 1s ease-out forwards;
+    animation: fade-inY 0.6s ease-out forwards;
+  }
+  .hide {
+    visibility: hidden;
   }
 }
 
