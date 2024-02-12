@@ -1,4 +1,4 @@
-import { TNavLinks, TReseaux } from "@/types/types";
+import { TNavLinks, TProject, TReseaux } from "@/types/types";
 
 export const NAV_LINKS: TNavLinks[] = [
   {
@@ -47,4 +47,35 @@ export const RESEAUX: TReseaux[] = [
     alt: "Logo github",
     href: "https://github.com/GuillaumeCeccoli"
   },
+]
+
+export const PROJECTS: TProject[] = [
+  {
+    id: "psychologue",
+    title: "Delphine - Psychologue",
+    description: "Site vitrine pour une psychologue",
+    img: "/assets/site-delphine.png",
+    href: "/"
+  },
+  {
+    id: "dev-up",
+    title: "Dev Up ! - Plateforme d'entraide",
+    description: "Site pour une plateforme d'entraide entre développeurs",
+    img: "/assets/dev-up.png",
+    href: "/"
+  },
+  {
+    id: "imc",
+    title: "Calculateur d'IMC",
+    description: "Calculateur d'indice de masse corporelle",
+    img: "/assets/imc.png",
+    href: "/"
+  },
+  {
+    id: "challenge",
+    title: "Challenge - Landing page agence de voyage",
+    description: "Landing page pour une agence de voyage fictive",
+    img: "/assets/travel-agency.png",
+    href: "/"
+  }
 ]

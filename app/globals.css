@@ -93,6 +93,17 @@
   .hide {
     visibility: hidden;
   }
+  @keyframes borderAnimation {
+    from {
+      border: 1px solid grey;
+    }
+    to {
+      border: 5px solid grey;
+    }
+  }
+  .borderAnimation:hover {
+    animation: borderAnimation 0.3s ease-in-out forwards;
+  }
 }
 
 @layer base {

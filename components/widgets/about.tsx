@@ -13,7 +13,7 @@ export default function About() {
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.remove("hide");
-          entry.target.classList.add("animateY");
+          entry.target.classList.add("animateX");
         }
       },
       {
@@ -53,7 +53,7 @@ export default function About() {
             poursuivre mon évolution et étancher ma soif de nouvelles
             connaissances.
           </p>
-          <Button>En savoir plus</Button>
+          <Button>Contactez-moi !</Button>
         </div>
         <div className="w-4/5 overflow-hidden rounded-lg md:w-2/6 xl:w-3/12">
           <Image

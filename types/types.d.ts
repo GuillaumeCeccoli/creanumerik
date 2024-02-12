@@ -12,3 +12,11 @@ export type TReseaux = {
   href: string,
   alt: string,
 }
+
+export type TProject = {
+  id: string,
+  title: string,
+  description: string,
+  img: string,
+  href: string,
+}
