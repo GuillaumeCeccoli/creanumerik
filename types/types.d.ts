@@ -20,3 +20,8 @@ export type TProject = {
   img: string,
   href: string,
 }
+
+export type TTechnos = {
+  id: string,
+  name: string,
+}

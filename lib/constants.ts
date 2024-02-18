@@ -1,4 +1,4 @@
-import { TNavLinks, TProject, TReseaux } from "@/types/types";
+import { TNavLinks, TProject, TReseaux, TTechnos } from "@/types/types";
 
 export const NAV_LINKS: TNavLinks[] = [
   {
@@ -77,5 +77,48 @@ export const PROJECTS: TProject[] = [
     description: "Landing page pour une agence de voyage fictive",
     img: "/assets/travel-agency.png",
     href: "/"
+  }
+]
+
+export const TECHNOS: TTechnos[] = [
+  {
+    id: "htmlcss",
+    name: "HTML & CSS"
+  },
+  {
+    id: "jsts",
+    name: "JavaScript / TypeScript"
+  },
+  {
+    id: "react",
+    name: "React"
+  },
+  {
+    id: "next",
+    name: "Next.js"
+  },
+  {
+    id: "tailwind",
+    name: "Tailwind CSS"
+  },
+  {
+    id: "git",
+    name: "Git"
+  },
+  {
+    id: "github",
+    name: "GitHub"
+  },
+  {
+    id: "node",
+    name: "Node.js"
+  },
+  {
+    id: "figma",
+    name: "Figma"
+  },
+  {
+    id: "affinity",
+    name: "Affinity Designer"
   }
 ]

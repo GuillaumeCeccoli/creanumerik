@@ -2,6 +2,7 @@ import About from "@/components/widgets/about";
 import Accueil from "@/components/widgets/accueil";
 import NavBar from "@/components/widgets/navbar";
 import ProjectCards from "@/components/widgets/projectCards";
+import Technos from "@/components/widgets/technos";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       </section>
       <section>
         <ProjectCards />
+      </section>
+      <section>
+        <Technos />
       </section>
     </>
   );
