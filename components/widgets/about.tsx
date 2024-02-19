@@ -1,36 +1,11 @@
 "use client";
 
+import { useIntersectionObserver } from "@/lib/hooks/useIntersectionObserverHook";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
 import { Button } from "../ui/button";
 
 export default function About() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const currentRef = ref.current;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove("hide");
-          entry.target.classList.add("animateX");
-        }
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.4,
-      }
-    );
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-    };
-  }, []);
+  const ref = useIntersectionObserver("animateX");
   return (
     <article className="flex flex-col items-center w-11/12 gap-20 mx-auto pt-20 pb-40">
       <h2 className="text-3xl text-black font-bold py-20">Qui suis-je ?</h2>

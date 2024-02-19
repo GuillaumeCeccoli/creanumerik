@@ -1,4 +1,7 @@
+"use client";
+
 import { PROJECTS } from "@/lib/constants";
+import { useIntersectionObserver } from "@/lib/hooks/useIntersectionObserverHook";
 import Image from "next/image";
 import {
   Accordion,
@@ -10,10 +13,14 @@ import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 
 export default function ProjectCards() {
+  const ref = useIntersectionObserver("animateX");
   return (
     <div className="flex flex-col items-center py-10">
       <h2 className="text-3xl text-black font-bold py-20">Mes réalisations</h2>
-      <div className="flex flex-col items-center gap-16 pt-20 pb-40 w-4/5 md:flex-row md:justify-around md:flex-wrap md:w-full">
+      <div
+        ref={ref}
+        className="hide flex flex-col items-center gap-16 pt-20 pb-40 w-4/5 md:flex-row md:justify-around md:flex-wrap md:w-full"
+      >
         {PROJECTS.map((project, id) => {
           return (
             <Card
@@ -26,8 +33,8 @@ export default function ProjectCards() {
                     <Image
                       src={project.img}
                       alt={project.title}
-                      width={300}
-                      height={300}
+                      width={1000}
+                      height={1000}
                       className="object-cover w-full"
                     />
                     <div className="absolute bottom-4 bg-white bg-opacity-50 rounded-full animate-bounce">

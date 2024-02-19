@@ -25,3 +25,10 @@ export type TTechnos = {
   id: string,
   name: string,
 }
+
+export type TFormFieldProps = {
+  control: Control<z.infer<typeof formSchema>>,
+  name: keyof z.infer<typeof formSchema>,
+  label: string,
+  textarea: boolean,
+}

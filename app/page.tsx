@@ -1,5 +1,6 @@
 import About from "@/components/widgets/about";
 import Accueil from "@/components/widgets/accueil";
+import Contact from "@/components/widgets/contact";
 import NavBar from "@/components/widgets/navbar";
 import ProjectCards from "@/components/widgets/projectCards";
 import Technos from "@/components/widgets/technos";
@@ -13,14 +14,17 @@ export default function Home() {
       <section className="h-screen">
         <Accueil />
       </section>
-      <section>
+      <section id="about">
         <About />
       </section>
-      <section>
+      <section id="projets">
         <ProjectCards />
       </section>
-      <section>
+      <section id="technos">
         <Technos />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </>
   );

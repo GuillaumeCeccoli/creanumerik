@@ -9,22 +9,22 @@ export const NAV_LINKS: TNavLinks[] = [
   {
     id: "about",
     label: "A propos",
-    href: "/"
-  },
-  {
-    id: "skills",
-    label: "Compétences",
-    href: "/"
+    href: "/#about"
   },
   {
     id: "projects",
     label: "Réalisations",
-    href: "/"
+    href: "/#projets"
+  },
+  {
+    id: "skills",
+    label: "Compétences",
+    href: "/#technos"
   },
   {
     id: "contact",
     label: "Contact",
-    href: "/"
+    href: "/#contact"
   }
 ]
 
