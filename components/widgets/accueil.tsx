@@ -1,6 +1,5 @@
 import { Separator } from "@/components/ui/separator";
 import { RESEAUX } from "@/lib/constants";
-import { ChevronsDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +20,7 @@ export default function Accueil() {
         <h2 className="text-xl">Développeur Web</h2>
         <Separator className="bg-slate-400 w-3/5" />
         <p className="italic text-slate-500 text-center w-4/5">
-          Focus sur Next.js, Tailwindcss et Typescript
+          Développeur web curieux et passionné.
         </p>
 
         <ul className="flex flex-row gap-5">
@@ -40,7 +39,6 @@ export default function Accueil() {
           ))}
         </ul>
       </div>
-      <ChevronsDown size={60} className="absolute bottom-0 animate-bounce" />
     </article>
   );
 }

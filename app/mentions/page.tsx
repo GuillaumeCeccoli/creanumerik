@@ -4,7 +4,7 @@ import NavBar from "@/components/widgets/navbar";
 export default function Mentions() {
   return (
     <>
-      <header>
+      <header className="bg-slate-100 fixed top-0 w-full z-10">
         <NavBar />
       </header>
       <section className="w-full flex flex-col items-start mx-auto py-20 gap-5 sm:py-40 md:items-center">

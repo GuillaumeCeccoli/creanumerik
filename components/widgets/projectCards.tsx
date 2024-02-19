@@ -3,13 +3,13 @@
 import { PROJECTS } from "@/lib/constants";
 import { useIntersectionObserver } from "@/lib/hooks/useIntersectionObserverHook";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
-import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 
 export default function ProjectCards() {
@@ -42,9 +42,12 @@ export default function ProjectCards() {
                     </div>
                   </CardContent>
                   <AccordionContent className="flex">
-                    <Button className="my-4 mx-auto hover:bg-gray-500">
+                    <Link
+                      href={`/projects/${project.id}`}
+                      className="my-4 mx-auto hover:bg-gray-500"
+                    >
                       En savoir plus
-                    </Button>
+                    </Link>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
