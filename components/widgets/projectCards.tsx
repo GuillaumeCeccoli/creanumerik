@@ -44,7 +44,7 @@ export default function ProjectCards() {
                   <AccordionContent className="flex">
                     <Link
                       href={`/projects/${project.id}`}
-                      className="my-4 mx-auto hover:bg-gray-500"
+                      className="my-6 mx-auto hover:bg-gray-300 p-4 bg-gray-200 rounded-lg"
                     >
                       En savoir plus
                     </Link>

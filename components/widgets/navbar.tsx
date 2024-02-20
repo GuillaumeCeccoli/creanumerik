@@ -32,7 +32,7 @@ export default function NavBar() {
       <div className="hidden sm:block sm:mr-4">
         <ul className="flex flex-row items-center justify-between gap-10 text-sm lg:text-base">
           {NAV_LINKS.map((link, id) => (
-            <li key={id}>
+            <li key={id} className="underline-from-center">
               <Link href={link.href}>{link.label}</Link>
             </li>
           ))}

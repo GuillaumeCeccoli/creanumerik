@@ -95,14 +95,50 @@
   }
   @keyframes borderAnimation {
     from {
-      border: 1px solid grey;
+      border: none;
     }
     to {
-      border: 5px solid grey;
+      border: 2px solid black;
     }
   }
   .borderAnimation:hover {
-    animation: borderAnimation 0.3s ease-in-out forwards;
+    animation: borderAnimation 0.1s ease forwards;
+  }
+  .gradient {
+    background: radial-gradient(
+      circle,
+      rgb(207, 206, 206) 0%,
+      rgb(236, 235, 235) 100%
+    );
+    filter: blur(30px);
+  }
+
+  .underline-from-center {
+    position: relative;
+  }
+
+  .underline-from-center::before,
+  .underline-from-center::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background: currentColor;
+    transition: width 0.1s ease-in-out;
+  }
+
+  .underline-from-center::before {
+    left: 50%;
+  }
+
+  .underline-from-center::after {
+    right: 50%;
+  }
+
+  .underline-from-center:hover::before,
+  .underline-from-center:hover::after {
+    width: 50%;
   }
 }
 

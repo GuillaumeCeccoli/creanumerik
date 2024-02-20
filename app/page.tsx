@@ -1,5 +1,6 @@
 import About from "@/components/widgets/about";
 import Accueil from "@/components/widgets/accueil";
+import Background from "@/components/widgets/background";
 import Contact from "@/components/widgets/contact";
 import Footer from "@/components/widgets/footer";
 import NavBar from "@/components/widgets/navbar";
@@ -12,8 +13,9 @@ export default function Home() {
       <header className="bg-slate-100 fixed top-0 w-full z-10">
         <NavBar />
       </header>
-      <section className="h-screen">
+      <section className="h-screen relative">
         <Accueil />
+        <Background />
       </section>
       <section id="about">
         <About />
