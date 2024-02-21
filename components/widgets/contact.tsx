@@ -105,7 +105,7 @@ export default function Contact() {
     message: string;
   }) => {
     try {
-      const response = await fetch("/api/contactDatas/", {
+      const response = await fetch("/api/contactDatas", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
