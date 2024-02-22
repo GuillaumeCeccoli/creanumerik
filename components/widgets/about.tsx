@@ -2,7 +2,7 @@
 
 import { useIntersectionObserver } from "@/lib/hooks/useIntersectionObserverHook";
 import Image from "next/image";
-import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function About() {
   const ref = useIntersectionObserver("animateX");
@@ -28,7 +28,12 @@ export default function About() {
             poursuivre mon évolution et étancher ma soif de nouvelles
             connaissances.
           </p>
-          <Button>Contactez-moi !</Button>
+          <Link
+            href="/#contact"
+            className="py-3 px-4 bg-gray-200 font-bold rounded-lg hover:bg-gray-300"
+          >
+            Contactez-moi !
+          </Link>
         </div>
         <div className="w-4/5 overflow-hidden rounded-lg md:w-2/6 xl:w-3/12">
           <Image
