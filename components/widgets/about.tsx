@@ -32,8 +32,8 @@ export default function About() {
         </div>
         <div className="w-4/5 overflow-hidden rounded-lg md:w-2/6 xl:w-3/12">
           <Image
-            src="/assets/homme.jpg"
-            alt="Photo de quelqu'un entrain de travailler"
+            src="/assets/GuillaumePhoto.png"
+            alt="Photo de Guillaume"
             width={300}
             height={300}
             className="object-cover w-full"

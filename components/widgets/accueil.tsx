@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Accueil() {
   return (
     <article className="h-full flex flex-col items-center pt-40 md:pt-80 md:flex-row md:justify-evenly md:items-start lg:w-4/5 lg:mx-auto">
-      <div className="overflow-hidden rounded-full drop-shadow-xl w-3/5 lg:w-2/5 animateX">
+      <div className="overflow-hidden w-3/5 lg:w-2/5 animateX">
         <Image
           src="/assets/Guillaume.png"
           alt="Une photo du développeur"
