@@ -7,7 +7,7 @@ export default function Mentions() {
       <header className="bg-slate-100 fixed top-0 w-full z-10">
         <NavBar />
       </header>
-      <section className="w-full flex flex-col items-start mx-auto py-20 gap-5 sm:py-40 md:items-center">
+      <section className="w-4/5 flex flex-col items-start mx-auto py-20 gap-5 sm:py-40 md:items-center">
         <h1 className="text-gray-600 font-bold">Mentions légales : </h1>
         <h2 className="underline">Editeur du site : </h2>
         <p>
