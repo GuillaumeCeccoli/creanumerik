@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Accueil() {
   return (
     <article className="h-full flex flex-col items-center pt-40 md:pt-80 md:flex-row md:justify-evenly md:items-start lg:w-4/5 lg:mx-auto">
-      <div className="overflow-hidden w-3/5 lg:w-2/5 animateX">
+      <div className="overflow-hidden w-3/5 pb-10 lg:w-2/5 animateX">
         <Image
           src="/assets/Guillaume.png"
           alt="Une photo du développeur"
@@ -15,7 +15,7 @@ export default function Accueil() {
           className="object-cover mx-auto"
         />
       </div>
-      <div className="flex flex-col items-center w-4/5 gap-6 py-10 md:w-2/5 animateY">
+      <div className="flex flex-col items-center w-4/5 gap-6 pb-10 md:w-2/5 md:py-10 animateY">
         <h1 className="text-3xl">Guillaume</h1>
         <h2 className="text-xl">Développeur Web</h2>
         <Separator className="bg-slate-400 w-3/5" />
