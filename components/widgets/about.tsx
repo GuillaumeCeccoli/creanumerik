@@ -16,8 +16,8 @@ export default function About() {
         <div className="flex flex-col items-center p-4 text-sm gap-8 border-2 border-slate-300 rounded-xl  md:w-2/4 xl:w-2/6">
           <p>
             J&apos;ai démarré ma carrière professionnelle comme menuisier dans
-            une entreprise industrielle. Je suis parti de rien et j&apos;évolué
-            au sein de l&apos;entreprise, tout en apprenant ce métier.
+            une entreprise industrielle. Je suis parti de rien et j&apos;ai
+            évolué au sein de l&apos;entreprise, tout en apprenant ce métier.
           </p>
           <p>
             Mais peu à peu, mes aspirations se sont tournées vers un tout autre
